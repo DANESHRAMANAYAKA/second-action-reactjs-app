@@ -2,7 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
 name: Deploy Project
-on: push
+on: [push, workflow_dispatch]
 jobs:
     build:
         runs-on: ubuntu-latest
